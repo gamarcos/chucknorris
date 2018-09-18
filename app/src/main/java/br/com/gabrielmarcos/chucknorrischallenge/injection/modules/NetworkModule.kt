@@ -1,5 +1,6 @@
 package br.com.gabrielmarcos.chucknorrischallenge.injection.modules
 
+import br.com.gabrielmarcos.chucknorrischallenge.BuildConfig
 import br.com.gabrielmarcos.chucknorrischallenge.network.ChuckNorrisApi
 import dagger.Module
 import dagger.Provides
@@ -23,7 +24,7 @@ object NetworkModule {
     @Provides
     internal fun provideRetrofitInterface(): Retrofit {
         return Retrofit.Builder()
-                .baseUrl("https://api.chucknorris.io/jokes/")
+                .baseUrl(BuildConfig.BASE_URL)
                 .addConverterFactory(GsonConverterFactory.create())
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.createWithScheduler(Schedulers.io()))
                 .build()
