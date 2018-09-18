@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/categorieCell"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/cateogy_cell_height"
+    android:layout_marginTop="@dimen/cateogy_content_margin_top">
+
+    <TextView
+        android:id="@+id/categorieTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/cateogy_cell_margin_start"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/cateogy_cell_detail_margin_start"
+        android:alpha="0.3"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

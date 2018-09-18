@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/detailToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="5dp"
+        android:background="@color/colorPrimary"
+        app:navigationIcon="@drawable/ic_back_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/detailIcon"
+        android:layout_width="@dimen/detail_icon_size"
+        android:layout_height="@dimen/detail_icon_size"
+        android:layout_margin="@dimen/detail_margin_vertical"
+        android:scaleType="center"
+        app:layout_constraintTop_toBottomOf="@+id/detailToolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    
+    <TextView
+        android:id="@+id/detailPhrase"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/detail_margin_vertical"
+        android:layout_marginRight="@dimen/detail_margin_horizontal"
+        android:layout_marginLeft="@dimen/detail_margin_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailIcon"/>
+    
+    <TextView
+        android:id="@+id/detailLink"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/detail_margin_vertical"
+        android:layout_marginRight="@dimen/detail_margin_horizontal"
+        android:layout_marginLeft="@dimen/detail_margin_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/detailPhrase" />
+
+    <Button
+        android:id="@+id/detailVisitPage"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="@dimen/detail_margin_horizontal"
+        android:text="@string/detail_title_button"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ProgressBar
+        android:id="@+id/categoryProgress"
+        android:layout_width="@dimen/progress_size"
+        android:layout_height="@dimen/progress_size"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

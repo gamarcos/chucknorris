@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Category-->
+    <dimen name="cateogy_content_margin_top">8dp</dimen>
+    <dimen name="cateogy_cell_height">50dp</dimen>
+    <dimen name="cateogy_cell_margin_start">16dp</dimen>
+    <dimen name="cateogy_cell_detail_margin_start">24dp</dimen>
+    <dimen name="categoty_image_height">200dp</dimen>
+
+    <!--Utils-->
+    <dimen name="progress_size">50dp</dimen>
+
+    <!--Detail-->
+    <dimen name="detail_icon_size">50dp</dimen>
+    <dimen name="detail_margin_vertical">16dp</dimen>
+    <dimen name="detail_margin_horizontal">16dp</dimen>
+
+</resources>
